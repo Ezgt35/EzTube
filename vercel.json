@@ -5,12 +5,20 @@
     {
       "src": "api/download.js",
       "use": "@vercel/node"
+    },
+    {
+      "src": "views/index.html",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "/api/(.*)",
       "dest": "/api/download.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/views/index.html"
     }
   ]
 }
