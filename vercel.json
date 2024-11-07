@@ -1,14 +1,16 @@
 {
   "version": 2,
-  "public": "public",
+  "public": true,
+  "builds": [
+    {
+      "src": "api/download.js",
+      "use": "@vercel/node"
+    }
+  ],
   "routes": [
     {
-      "src": "/download",
-      "dest": "/api/download.js"
-    },
-    {
       "src": "/(.*)",
-      "dest": "/views/index.html"
+      "dest": "/api/download.js"
     }
   ]
 }
