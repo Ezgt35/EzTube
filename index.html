@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y2Mate Clone</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Download YouTube Video</h2>
+        <input type="text" id="videoLink" placeholder="Paste YouTube link here">
+        <button onclick="searchVideo()">Search</button>
+        <p id="errorMsg" class="error"></p>
+
+        <div id="options" style="display: none;">
+            <button onclick="download('mp3')">Download MP3</button>
+            <button onclick="download('mp4')">Download MP4</button>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
