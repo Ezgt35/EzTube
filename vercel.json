@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "public": "public",
+  "routes": [
+    {
+      "src": "/download",
+      "dest": "/api/download.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/views/index.html"
+    }
+  ]
+}
