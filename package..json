@@ -1,11 +1,8 @@
 {
-  "name": "y2mate-clone",
+  "name": "ez-tube",
   "version": "1.0.0",
-  "description": "Simple Y2Mate clone to download YouTube videos",
-  "scripts": {
-    "start": "vercel dev"
-  },
+  "main": "index.js",
   "dependencies": {
-    "ytdl-core": "^4.9.1"
+    "ytdl-core": "^4.13.0"
   }
 }
